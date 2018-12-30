@@ -1,39 +1,39 @@
 module.exports = {
 	BossActionsTips : {
-		101: {msg: '锤地 (格挡)'},
-		103: {msg: '前砸 (闪避)'},//103 104
-		105: {msg: '270扫飞 (格挡)'},
-		107: {msg: '重击 (闪避)'},	
-		108: {msg: '丢锤 (晕眩)'},
-		111: {msg: '后砸 (慢慢慢慢)'},
-		112: {msg: '完美格挡'},
-		113: {msg: '点名 (闪避)'},
-		114: {msg: '捶地 (秒杀)'},
-		115: {msg: '右手蓄力 (击飞)'},//114 115
-		116: {msg: '甜甜圈'},
-		117: {msg: '随仇->跳劈 (击倒)'},
-		118: {msg: '主仇->跳劈 (击倒)'},
-		119: {msg: '→右侧安全→ (坦左移)'},
-		120: {msg: '←左侧安全← (坦右移)'},
-		121: {msg: '左脚 (4连半月)'},
-		122: {msg: '左脚 第3下加速'},
-		123: {msg: '左脚 第2下加速'},
-		125: {msg: '右手前砸(闪) | 后拉'},//125 126 127
-		131: {msg: '左大范围(挡) | 后拉'},//131 132 134
-		135: {msg: '完美格挡'},
-		// 137: {msg: '后砸 (闪避)'},
-		138: {msg: '左手蓄力 (击飞)'},//113 138		
-		139: {msg: '转圈 (击倒)'}, //108 110 139    118 139    101 105 107 139
-		140: {msg: '右脚 (4连半月)'},
-		141: {msg: '右脚 第3下加速'},
-		142: {msg: '右脚 第2下加速'},
-		305: {msg: '滚石!!'},
-		306: {msg: '滚石!!'},
-		307: {msg: '陨石 (集中)'},//307 301
-		308: {msg: '第1次晕'},
-		309: {msg: '第2次晕'},
-		310: {msg: '第3次晕'},
-		311: {msg: '补师开盾 (右手放锤)'},//311 120    311 119
-		312: {msg: '补师开盾 (左右放锤)'},//312 119    312 120
+		101: {msg: 'Hammer ground (block)'},
+		103: {msg: 'Front (Dodge)'},//103 104
+		105: {msg: '270 sweeping (block)'},
+		107: {msg: 'Heavy blow'},	
+		108: {msg: 'Throwing a hammer (stun)'},
+		111: {msg: 'Big hammer back'},
+		112: {msg: 'Perfect block'},
+		113: {msg: '点名 (Dodge)'},
+		114: {msg: 'Front Slam'},
+		115: {msg: 'Right hand power (flying)'},//114 115
+		116: {msg: 'Donut'},
+		117: {msg: 'Jump (Knockdown)'},
+		118: {msg: 'Jump -> Tank (Knockdown)'},
+		119: {msg: '→Right safe→'},
+		120: {msg: '←Left safe←'},
+		121: {msg: 'Waves (Left)'},
+		122: {msg: 'Waves (Left)'},
+		123: {msg: 'Waves (Left)'},
+		125: {msg: 'Front -> Right Scratch -> Back'},//125 126 127
+		131: {msg: 'Front -> Left Scratch -> Back'},//131 132 134
+		135: {msg: 'Perfect block'},
+		// 137: {msg: 'Hammer back'},
+		138: {msg: 'Left hand power (flying)'},//113 138		
+		139: {msg: 'Knockback!!'}, //108 110 139    118 139    101 105 107 139
+		140: {msg: 'Waves (Right)'},
+		141: {msg: 'Waves (Right)'},
+		142: {msg: 'Waves (Right)'},
+		305: {msg: 'Meteors!!'},
+		306: {msg: 'Meteors!!'},
+		307: {msg: 'Bombs'},//307 301
+		308: {msg: '1st dizzy'},
+		309: {msg: '2nd dizzy'},
+		310: {msg: '3rd dizzy'},
+		311: {msg: 'Make up the shield (right hand put hammer)'},//311 120    311 119
+		312: {msg: 'Make up the shield (left and right hammer)'},//312 119    312 120
 	}
 }
