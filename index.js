@@ -152,7 +152,7 @@ module.exports = function BaharrGuide(mod) {
 						return;
 					} */
 					if (skill == 305) {
-						noticeMessage('<font color="#FF0000">红眼射线 (秒杀)</font>');
+						noticeMessage('<font color="#FF0000">Red eye ray (second kill)</font>');
 						Spawnitem1(912, 180, 3000, 6000);
 						return;
 					}
@@ -216,11 +216,11 @@ module.exports = function BaharrGuide(mod) {
 						Spawnitem1(itemID, 0, 500, 6000);
 						
 						timeOut = setTimeout(() => {
-							alertMessage('四连半月 已就绪')
+							alertMessage('4 Waves ready')
 							mod.send('S_CHAT', 2, {
 								channel: 25,
-								authorName: '巴哈勒',
-								message: '四连半月 已就绪'
+								authorName: 'Guide',
+								message: '4 Waves ready'
 							});
 						}, 60000);
 						break;
@@ -251,14 +251,14 @@ module.exports = function BaharrGuide(mod) {
 			function sAbnormalityBegin(event) {
 				if (Number(event.target) != Number(bossId)) return;
 				
-				if (event.id == 90442304) noticeMessage('以 [暈眩技能] 阻止 震怒的暴風 施展');
+				if (event.id == 90442304) noticeMessage('Stop the violent storm with [stun skill]');
 				
 				if (event.id == 90442000) shining = true;
 				if (event.id == 90442001) shining = false;
 				
-				if (event.id == 90444001 && skillid == 104) setTimeout(() => { if (shining) noticeMessage('发光后砸') } , 500);
-				if (event.id == 90442000 && skillid == 134) setTimeout(() => { if (shining) noticeMessage('发光后砸') } , 300);
-				if (event.id == 90444001 && skillid == 118) setTimeout(() => { if (shining) noticeMessage('发光后砸') } , 300);
+				if (event.id == 90444001 && skillid == 104) setTimeout(() => { if (shining) noticeMessage('After illuminating') } , 500);
+				if (event.id == 90442000 && skillid == 134) setTimeout(() => { if (shining) noticeMessage('After illuminating') } , 300);
+				if (event.id == 90444001 && skillid == 118) setTimeout(() => { if (shining) noticeMessage('After illuminating') } , 300);
 			}
 		}
 	}
@@ -290,7 +290,7 @@ module.exports = function BaharrGuide(mod) {
 		if (sendToNotice) {
 			mod.send('S_CHAT', 2, {
 				channel: 21,
-				authorName: '巴哈勒',
+				authorName: 'Guide',
 				message: msg
 			});
 		}
@@ -307,8 +307,8 @@ module.exports = function BaharrGuide(mod) {
 			loc : new Vec3(-114567, 115063, 4022),
 			w : 3,
 			unk : 0,
-			ownerName : '王座',
-			message : '王座方向'
+			ownerName : 'throne',
+			message : 'throne direction'
 		});
 	}
 	
@@ -334,8 +334,8 @@ module.exports = function BaharrGuide(mod) {
 			loc : curLocation,
 			w : r,
 			unk : 0,
-			ownerName : '提示',
-			message : '安全区'
+			ownerName : 'Guide',
+			message : 'Safety Zone'
 		});
 		
 		if (hide) { curLocation.z = curLocation.z - 1000; }
