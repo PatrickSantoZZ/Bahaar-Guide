@@ -1,5 +1,2 @@
-巴哈勒火神殿 攻击-提示辅助
-
-在 /8 频道中输入
-
-baha	(默认 开启提示状态)
+# bahaar-guide
+Guide for Bahaar's Sanctum
