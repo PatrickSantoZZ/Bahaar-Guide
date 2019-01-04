@@ -5,7 +5,7 @@ const MapID = 9044;
 const ZoneID = 444;
 const TemplateID = [1000, 2000];
 const {BossActionsTips} = require('./skillsList');
-const BossName = ['封印之门', '一阶', '二阶'];
+const BossName = ['Entrance', '1st Phase', '2nd Phase'];
 
 module.exports = function BaharrGuide(mod) {
 	let	enabled = true,
@@ -36,7 +36,7 @@ module.exports = function BaharrGuide(mod) {
 		uid1 = 899999999n,
 		uid2 = 799999999n,
 		
-		itemID = 445,
+		itemID = 553,
 		timeOut = 0;
 	
 	mod.command.add(['巴哈', 'baha'], (arg) => {
@@ -86,7 +86,7 @@ module.exports = function BaharrGuide(mod) {
 		}
 	});
 	
-	mod.hook('S_LOGIN', 10, (event) => {
+	mod.hook('S_LOGIN', 12, (event) => {
 		let job = (event.templateId - 10101) % 100;
 		if (job === 1 || job === 10) {					// 0-双刀, 1-枪骑, 2-大剑, 3-斧头, 4-魔道
 			isTank = true;								// 5-弓箭, 6-祭司, 7-元素, 8-飞镰, 9-魔工
@@ -97,7 +97,7 @@ module.exports = function BaharrGuide(mod) {
 	
 	mod.hook('S_LOAD_TOPO', 3, (event) => {
 		if (event.zone === MapID) {
-			sendMessage('进入副本: ' + '火神殿 '.clr('56B4E9') + `${BossName[whichboss]}`.clr('FF0000'));
+			sendMessage('Welcome to: ' + 'Bahaar\'s Rectum '.clr('56B4E9') + `${BossName[whichboss]}`.clr('FF0000'));
 			insidemap = true;
 			checkBoss = true;
 			load();
@@ -153,7 +153,7 @@ module.exports = function BaharrGuide(mod) {
 					} */
 					if (skill == 305) {
 						noticeMessage('<font color="#FF0000">Red eye ray (second kill)</font>');
-						Spawnitem1(912, 180, 3000, 6000);
+						Spawnitem1(537, 180, 3000, 6000);
 						return;
 					}
 				}
@@ -216,11 +216,11 @@ module.exports = function BaharrGuide(mod) {
 						Spawnitem1(itemID, 0, 500, 6000);
 						
 						timeOut = setTimeout(() => {
-							alertMessage('4 Waves ready')
+							alertMessage('Waves soon...')
 							mod.send('S_CHAT', 2, {
 								channel: 25,
 								authorName: 'Guide',
-								message: '4 Waves ready'
+								message: 'Waves soon...'
 							});
 						}, 60000);
 						break;
@@ -251,14 +251,14 @@ module.exports = function BaharrGuide(mod) {
 			function sAbnormalityBegin(event) {
 				if (Number(event.target) != Number(bossId)) return;
 				
-				if (event.id == 90442304) noticeMessage('Stop the violent storm with [stun skill]');
+				if (event.id == 90442304) noticeMessage('Stop the Boss using [Stun] skill');
 				
 				if (event.id == 90442000) shining = true;
 				if (event.id == 90442001) shining = false;
 				
-				if (event.id == 90444001 && skillid == 104) setTimeout(() => { if (shining) noticeMessage('After illuminating') } , 500);
-				if (event.id == 90442000 && skillid == 134) setTimeout(() => { if (shining) noticeMessage('After illuminating') } , 300);
-				if (event.id == 90444001 && skillid == 118) setTimeout(() => { if (shining) noticeMessage('After illuminating') } , 300);
+				if (event.id == 90444001 && skillid == 104) setTimeout(() => { if (shining) noticeMessage('back hammer') } , 500);
+				if (event.id == 90442000 && skillid == 134) setTimeout(() => { if (shining) noticeMessage('back hammer') } , 300);
+				if (event.id == 90444001 && skillid == 118) setTimeout(() => { if (shining) noticeMessage('back hammer ') } , 300);
 			}
 		}
 	}

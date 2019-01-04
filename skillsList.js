@@ -1,39 +1,39 @@
 module.exports = {
 	BossActionsTips : {
-		101: {msg: 'Hammer ground (block)'},
+		101: {msg: 'Hammer (block) -> 270 -> Knockback'},
 		103: {msg: 'Front (Dodge)'},//103 104
-		105: {msg: '270 sweeping (block)'},
-		107: {msg: 'Heavy blow'},	
-		108: {msg: 'Throwing a hammer (stun)'},
-		111: {msg: 'Big hammer back'},
-		112: {msg: 'Perfect block'},
-		113: {msg: '点名 (Dodge)'},
+		105: {msg: '270 sweep (block) -> Knockback'},
+		107: {msg: 'Hammer -> Knockback'},	
+		108: {msg: 'Back Throw (stun)'},
+		111: {msg: 'Back BIG hammer'},
+		112: {msg: 'Handle! (Perfect block)'},
+		113: {msg: 'Bait (Dodge)'},
 		114: {msg: 'Front Slam'},
-		115: {msg: 'Right hand power (flying)'},//114 115
-		116: {msg: 'Donut'},
-		117: {msg: 'Jump (Knockdown)'},
+		115: {msg: 'Knockup (sending flying)'},//114 115
+		116: {msg: 'Donuts'},
+		117: {msg: 'Jump (Bait) (Knockdown)'},
 		118: {msg: 'Jump -> Tank (Knockdown)'},
-		119: {msg: '->Right safe->'},
-		120: {msg: '<-Left safe<-'},
+		119: {msg: 'RIGHT safe ->'},
+		120: {msg: '<- LEFT safe'},
 		121: {msg: 'Waves (Left)'},
-		122: {msg: 'Waves (Left)'},
-		123: {msg: 'Waves (Left)'},
-		125: {msg: 'Front -> Right Scratch -> Back'},//125 126 127
-		131: {msg: 'Front -> Left Scratch -> Back'},//131 132 134
-		135: {msg: 'Perfect block'},
-		// 137: {msg: 'Hammer back'},
-		138: {msg: 'Left hand power (flying)'},//113 138		
+		122: {msg: 'Waves 2 (Left)'},
+		123: {msg: 'Waves 3 (Left)'},
+		125: {msg: 'Front, <- LEFT safe, Back'},//125 126 127
+		131: {msg: 'Front, RIGHT safe ->, Back'},//131 132 134
+		135: {msg: 'Handle (Perfect block)'},
+		137: {msg: 'Back Hammer'},
+		138: {msg: 'Left hand powerhit (sending flying)'},//113 138		
 		139: {msg: 'Knockback!!'}, //108 110 139    118 139    101 105 107 139
 		140: {msg: 'Waves (Right)'},
-		141: {msg: 'Waves (Right)'},
-		142: {msg: 'Waves (Right)'},
+		141: {msg: 'Waves 2 (Right)'},
+		142: {msg: 'Waves 3 (Right)'},
 		305: {msg: 'Meteors!!'},
 		306: {msg: 'Meteors!!'},
 		307: {msg: 'Bombs'},//307 301
-		308: {msg: '1st dizzy'},
-		309: {msg: '2nd dizzy'},
-		310: {msg: '3rd dizzy'},
-		311: {msg: 'Make up the shield (right hand put hammer)'},//311 120    311 119
-		312: {msg: 'Make up the shield (left and right hammer)'},//312 119    312 120
+		308: {msg: '1st stun'},
+		309: {msg: '2nd stun'},
+		310: {msg: '3rd stun'},
+		311: {msg: 'Wrath - Right Hand'},//311 120    311 119
+		312: {msg: 'Wrath - Left Hand'},//312 119    312 120
 	}
 }
