@@ -16,8 +16,8 @@ module.exports = {
 		119: {msg: 'RIGHT safe ->'},
 		120: {msg: '<- LEFT safe'},
 		121: {msg: 'Waves (Left)'},
-		122: {msg: 'Waves 2 (Left)'},
-		123: {msg: 'Waves 3 (Left)'},
+		122: {msg: 'Waves (Left) 3 fast'},
+		123: {msg: 'Waves (Left) 2 fast'},
 		125: {msg: 'Front, <- LEFT safe, Back'},//125 126 127
 		131: {msg: 'Front, RIGHT safe ->, Back'},//131 132 134
 		135: {msg: 'Handle (Perfect block)'},
@@ -25,8 +25,8 @@ module.exports = {
 		138: {msg: 'Left hand powerhit (sending flying)'},//113 138		
 		139: {msg: 'Knockback!!'}, //108 110 139    118 139    101 105 107 139
 		140: {msg: 'Waves (Right)'},
-		141: {msg: 'Waves 2 (Right)'},
-		142: {msg: 'Waves 3 (Right)'},
+		141: {msg: 'Waves (Right) 3 fast'},
+		142: {msg: 'Waves (Right) 2 fast'},
 		305: {msg: 'Meteors!!'},
 		306: {msg: 'Meteors!!'},
 		307: {msg: 'Bombs'},//307 301
