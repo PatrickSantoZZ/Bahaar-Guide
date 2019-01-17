@@ -1,11 +1,12 @@
 {
 	"files": {
-		"README.md": "c6e7b7b2b82884fe594074045e07cdee494297d7093c817324898b4dc33e5954",
-		"index.js": "8fdbb33e4a2099d8612a3bfce9482151d8cee08ab52fec823028ac65f908f2cc",
+		"README.md": "e042b0c3f47dee9ab8acd234fa6b1fc446c7b4ee9c2c90b8b2d65b6768c2784b",
+		"config.json": "e8c3e8cda9f151e81e1914acf561af3b5d19ecfdadd2a18cb81d97a7e7fcfc4e",
+		"index.js": "325d06a71225d87cd3f27ae1b579e8268d6e981164176e08a8b05a5284424ee2",
 		"module.json": "c1c9ef04a417ca46c5b3cc08d154218311e788c03dd1ef435107931b60b9f74a",
 		"skillsList.js": {
 			"overwrite": false,
-			"hash": "95f8d44b2c571e28e9fd21b4cb4e190e112ea298160ae3de8c6adf230098b2eb"
+			"hash": "e35d825b7bd1b1bfb1d48cc4a3536aa329fa108e85fc403250664b71fa8202cd"
 		}
 	},
 	"defs": {
@@ -21,6 +22,7 @@
 		"S_LOGIN": 12,
 		"S_SPAWN_BUILD_OBJECT": 2,
 		"S_SPAWN_COLLECTION": 4,
-		"S_SPAWN_DROPITEM": 6
+		"S_SPAWN_DROPITEM": 6,
+		"S_SPAWN_ME": 3
 	}
 }
