@@ -1,8 +1,8 @@
 {
 	"files": {
 		"README.md": "e042b0c3f47dee9ab8acd234fa6b1fc446c7b4ee9c2c90b8b2d65b6768c2784b",
-		"config.json": "e8c3e8cda9f151e81e1914acf561af3b5d19ecfdadd2a18cb81d97a7e7fcfc4e",
-		"index.js": "325d06a71225d87cd3f27ae1b579e8268d6e981164176e08a8b05a5284424ee2",
+		"config.json": "616c8dee9a229c633b27e43647e2cc743fb687526ca8a3b72eed9c3cb5c1b1da",
+		"index.js": "a9afc37d220acde7aacd66a0562b96d73dc14952275e529c99a8a34585845e58",
 		"module.json": "c1c9ef04a417ca46c5b3cc08d154218311e788c03dd1ef435107931b60b9f74a",
 		"skillsList.js": {
 			"overwrite": false,
