@@ -157,12 +157,12 @@ module.exports = function BaharrGuide(mod) {
 					curAngle = event.w;
 					
 					skill = event.skill.id % 1000;
-					if (skill == 201) {
+					/*if (skill == 201) {
 						alertMessage('LASER');
 						return;
-					}
+					}*/
 					if (skill == 305) {
-						noticeMessage('<font color="#FF0000">LASER</font>');
+						noticeMessage('<font color="#FF0000">LASER firing</font>');
 						if (itemsHelp) {
 							Spawnitem1(itemID3, 180, 3000, 6000);
 						}
@@ -249,11 +249,11 @@ module.exports = function BaharrGuide(mod) {
 						Spawnitem1(itemID4, 0, 500, 6000);
 						
 						timeOut = setTimeout(() => {
-							mod.send('S_CHAT', 2, {
+							/*mod.send('S_CHAT', 2, {
 								channel: 25,
 								authorName: 'Guide',
 								message: 'Waves soon...'
-							});
+							});*/
 							
 							alertMessage('Waves soon...');
 						}, 60000);
@@ -292,12 +292,18 @@ module.exports = function BaharrGuide(mod) {
 				
 				/* 发光后砸 技能判定机制 不稳定(不准确) */
 				
-				if (event.id == 90444001 && skillid == 104) setTimeout(() => { if (shining) noticeMessage('back hammer'); }, 500);
-				if (event.id == 90442000 && skillid == 134) setTimeout(() => { if (shining) noticeMessage('back hammer'); }, 300);
-				if (event.id == 90444001 && skillid == 118) setTimeout(() => { if (shining) noticeMessage('back hammer'); }, 300);
+				if (event.id == 90444001 && skillid == 104) setTimeout(() => { if (shining) noticeMessage('back hammer (next)'); }, 500);
+				if (event.id == 90442000 && skillid == 134) setTimeout(() => { if (shining) noticeMessage('back hammer (next)'); }, 300);
+				if (event.id == 90444001 && skillid == 118) setTimeout(() => { if (shining) noticeMessage('back hammer (next)'); }, 50);
 			}
 		}
 	}
+	
+	/*function timestamp()
+	{
+		let today = new Date();
+		return "[" + today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds() + ":" + today.getMilliseconds() + "]";
+	}*/
 	
 	function hook() {
 		hooks.push(mod.hook(...arguments));

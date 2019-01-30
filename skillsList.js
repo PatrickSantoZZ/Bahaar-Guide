@@ -5,7 +5,7 @@ module.exports = {
 		//105: {msg: '270 sweep (block) -> Knockback'},
 		107: {msg: 'Hammer -> Knockback'},	
 		108: {msg: 'Back Throw (stun)'},
-		111: {msg: 'Back BIG hammer'},
+		111: {msg: 'Back BIG Hammer'},
 		//112: {msg: 'Handle! (Perfect block)'},
 		113: {msg: 'Bait (Dodge)'},
 		114: {msg: 'Front Slam'},
@@ -18,15 +18,17 @@ module.exports = {
 		121: {msg: 'Waves (Left)'},
 		122: {msg: 'Waves (Left) 3rd fast'},
 		123: {msg: 'Waves (Left) 2nd fast'},
-		125: {msg: 'Front, <- LEFT safe, Back'},//125 126 127
-		131: {msg: 'Front, RIGHT safe ->, Back'},//131 132 134
+		125: {msg: 'Front, ← LEFT safe, Back'},//125 126 127
+		131: {msg: 'Front, RIGHT → safe, Back'},//131 132 134
 		//135: {msg: 'Handle (Perfect block)'},
+		//127: {msg: 'Back Hammer (chain)'},
+		//134: {msg: 'Back Hammer (chain)'},
 		137: {msg: 'Back Hammer'},
 		138: {msg: 'Left hand powerhit (sending flying)'},//113 138		
 		139: {msg: 'Knockback!!'}, //108 110 139    118 139    101 105 107 139
 		140: {msg: 'Waves (Right)'},
 		141: {msg: 'Waves (Right) 3rd fast'},
-		142: {msg: 'Waves (Right) 2nd fast'},
+		142: {msg: 'Waves (Right) 2nd fast'}
 		//305: {msg: 'Meteors!!'},
 		//306: {msg: 'Meteors!!'},
 		//307: {msg: 'Bombs'},//307 301
