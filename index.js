@@ -164,7 +164,7 @@ module.exports = function BaharrGuide(mod) {
 					if (skill == 305) {
 						noticeMessage('<font color="#FF0000">LASER firing</font>');
 						if (itemsHelp) {
-							Spawnitem1(itemID3, 180, 3000, 6000);
+							Spawnitem1(itemID3, 180, 3000, 3000);
 						}
 						return;
 					}
