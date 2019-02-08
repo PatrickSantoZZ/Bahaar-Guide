@@ -285,6 +285,7 @@ module.exports = function BaharrGuide(mod) {
 			function sAbnormalityBegin(event) {
 				if (Number(event.target) != Number(bossId)) return;
 				
+				if (event.id == 90442303) alertMessage('Healer should use [Regress] skill');
 				if (event.id == 90442304) alertMessage('Stop the Boss using [Stun] skill');
 				
 				if (event.id == 90442000) shining = true;
