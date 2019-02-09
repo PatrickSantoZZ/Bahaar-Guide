@@ -1,8 +1,8 @@
 {
 	"files": {
-		"README.md": "e042b0c3f47dee9ab8acd234fa6b1fc446c7b4ee9c2c90b8b2d65b6768c2784b",
+		"README.md": "9fdfb3234d51aff421c00960d2d5bc5e6cdcb9859af5b104aafd2fa3b4066e4d",
 		"config.json": "616c8dee9a229c633b27e43647e2cc743fb687526ca8a3b72eed9c3cb5c1b1da",
-		"index.js": "b46ee69d1710ee66eefa331f8fd66d29967930780db0c805819d534d8a21722e",
+		"index.js": "c25b41432bd19a595aca8f60a6419d37a8edcfeca9273ba5f06ed9a269bfc856",
 		"module.json": "277e87daded95c3b17a1ba82cc0370c76ddb731431fdaf3841a394ddbe49a661",
 		"skillsList.js": {
 			"overwrite": false,
@@ -11,8 +11,7 @@
 	},
 	"defs": {
 		"S_ABNORMALITY_BEGIN": 3,
-		"S_ACTION_STAGE": 8,
-		"S_BOSS_GAGE_INFO": 3,
+		"S_ACTION_STAGE": 9,
 		"S_CHAT": 2,
 		"S_DESPAWN_BUILD_OBJECT": 2,
 		"S_DESPAWN_COLLECTION": 2,

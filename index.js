@@ -103,13 +103,10 @@ module.exports = function BaharrGuide(mod) {
 	mod.hook('S_LOAD_TOPO', 3, (event) => {
 		if (event.zone === MapID) {
 			insidemap = true;
-			checkBoss = true;
 			clearInterval(timeOut);
 			load();
 		} else {
 			insidemap = false;
-			checkBoss = false;
-			whichboss = 0;
 			shining = false;
 			clearInterval(timeOut);
 			TEST2();
@@ -118,32 +115,17 @@ module.exports = function BaharrGuide(mod) {
     });
 	
 	mod.hook('S_SPAWN_ME', 3, (event) => {
-		if (!enabled || !insidemap || !checkBoss) return;
+		if (!enabled || !insidemap) return;
 		setTimeout(() => {
-			sendMessage('Welcome to: ' + 'Bahaar\'s Rectum '.clr('56B4E9') + `${BossName[whichboss]}`.clr('FF0000'));
-			if (whichboss = 2) TEST1();
+			sendMessage('Welcome to: ' + 'Bahaar\'s Rectum '.clr('56B4E9'));
+			TEST1();
 		}, 3000);
 	});
 	
 	function load() {
 		if (!hooks.length) {
-			hook('S_BOSS_GAGE_INFO', 3, sBossGageInfo);
-			hook('S_ACTION_STAGE', 8, sActionStage);
+			hook('S_ACTION_STAGE', 9, sActionStage);
 			hook('S_ABNORMALITY_BEGIN', 3, sAbnormalityBegin);
-			
-			function sBossGageInfo(event) {
-				if (!enabled || !insidemap || !checkBoss) return;
-				
-				if (event.templateId === TemplateID[0]) {
-					whichboss = 1;
-				} else if (event.templateId === TemplateID[1]) {
-					whichboss = 2;
-				} else {
-					whichboss = 0;
-				}
-				bossId = event.id;
-				checkBoss = false;
-			}
 			
 			function sActionStage(event) {
 				if (!enabled || !insidemap) return;
@@ -172,6 +154,7 @@ module.exports = function BaharrGuide(mod) {
 				
 				if (!(TemplateID.includes(event.templateId))) return;
 				
+				bossId = event.gameId;
 				skillid = event.skill.id % 1000;
 				
 				if (BossActionsTips[skillid]) {
@@ -260,7 +243,7 @@ module.exports = function BaharrGuide(mod) {
 						break;
 						
 					case 101:	// 锤地(三连击)
-						Spawnitem1(itemID4, 345, 500, 4000);	// 对称轴 尾部
+						Spawnitem1(itemID4, 345, 500, 3000);	// 对称轴 尾部
 						Spawnitem1(itemID4, 270, 500, 3000);	// 对称轴 左侧
 						break;
 						
@@ -283,7 +266,7 @@ module.exports = function BaharrGuide(mod) {
 			}
 			
 			function sAbnormalityBegin(event) {
-				if (Number(event.target) != Number(bossId)) return;
+				if (event.target !== bossId) return;
 				
 				if (event.id == 90442303) alertMessage('Healer should use [Regress] skill');
 				if (event.id == 90442304) alertMessage('Stop the Boss using [Stun] skill');
