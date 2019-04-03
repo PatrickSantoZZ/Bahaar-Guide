@@ -365,7 +365,7 @@ module.exports = function BaharrGuide(mod) {
 		});
 		
 		if (hide) { curLocation.z = curLocation.z - 1000; }
-		mod.send('S_SPAWN_DROPITEM', 6, {
+		mod.send('S_SPAWN_DROPITEM', 7, {
 			gameId: uid2,
 			item: itemID2,
 			loc: curLocation,
@@ -373,7 +373,8 @@ module.exports = function BaharrGuide(mod) {
 			expiry: 600000,
 			owners: [{
 				id: 0
-			}]
+			}],
+			ownerName: "Bahaar"
 		});
 		if (hide) { curLocation.z = curLocation.z + 1000; }
 		
