@@ -163,6 +163,26 @@ module.exports = function BaharrGuide(mod) {
 				
 				/* 地面范围提示 */
 				
+				switch (skillid)
+				{
+					case 121:	// 左脚→(4连火焰)
+					case 122:
+					case 123:
+					case 140:	// 右脚←(4连火焰)
+					case 141:
+					case 142:
+						timeOut = setTimeout(() => {
+							/*mod.send('S_CHAT', 2, {
+								channel: 25,
+								authorName: 'Guide',
+								message: 'Waves soon...'
+							});*/
+							
+							alertMessage('Waves soon...');
+						}, 60000);
+						break;
+				}
+				
 				if (!itemsHelp) return;
 				
 				boss_CurLocation = event.loc;
@@ -230,16 +250,6 @@ module.exports = function BaharrGuide(mod) {
 						SpawnThing(true, 270, 100, 100);
 						Spawnitem1(itemID4, 180, 500, 6000);
 						Spawnitem1(itemID4, 0, 500, 6000);
-						
-						timeOut = setTimeout(() => {
-							/*mod.send('S_CHAT', 2, {
-								channel: 25,
-								authorName: 'Guide',
-								message: 'Waves soon...'
-							});*/
-							
-							alertMessage('Waves soon...');
-						}, 60000);
 						break;
 						
 					case 101:	// 锤地(三连击)
