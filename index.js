@@ -193,12 +193,12 @@ module.exports = function BaharrGuide(mod) {
 				switch (skillid) {
 					case 103:	// 前砸 103 104
 					case 125:	// 右前砸 125 126 127
-						SpawnThing(true, 184, 400, 100);
+						//SpawnThing(true, 184, 400, 100);
 						Spawnitem2(itemID4, 8, 350, 3000);
 						break;
 						
 					case 131:	// 左前砸 131 132 134
-						SpawnThing(true, 182, 340, 100);
+						//SpawnThing(true, 182, 340, 100);
 						Spawnitem2(itemID4, 8, 660, 4000);
 						break;
 						
@@ -206,24 +206,24 @@ module.exports = function BaharrGuide(mod) {
 					case 132:	// 左后拉 131 132 134
 						Spawnitem1(itemID4, 180, 500, 2000);	// 对称轴 头部
 						Spawnitem1(itemID4, 0, 500, 2000);		// 对称轴 尾部
-						if (skillid === 126) {
+						/*if (skillid === 126) {
 							SpawnThing(true, 90, 100, 100);		// 右后拉
 						}
 						if (skillid === 132) {
 							SpawnThing(true, 180, 100, 100);	// 左后拉
-						}
+						}*/
 						Spawnitem1(itemID4, 180, 500, 2000);
 						Spawnitem1(itemID4, 0, 500, 2000);
 						break;
 						
 					case 112:	// 完美格挡
 					case 135:
-						SpawnThing(true, 184, 220, 100);
+						//SpawnThing(true, 184, 220, 100);
 						Spawnitem2(itemID4, 12, 210, 4000);
 						break;
 						
 					case 114:	// 捶地
-						SpawnThing(true, 184, 260, 100);
+						//SpawnThing(true, 184, 260, 100);
 						Spawnitem2(itemID4, 10, 320, 4000);
 						break;
 						
@@ -233,7 +233,7 @@ module.exports = function BaharrGuide(mod) {
 						
 					case 111:	// 后砸 (慢慢慢慢)
 					case 137:	// 后砸
-						SpawnThing(true, 0, 500, 100);
+						//SpawnThing(true, 0, 500, 100);
 						Spawnitem2(itemID4, 8, 480, 2000);
 						break;
 						
@@ -243,11 +243,11 @@ module.exports = function BaharrGuide(mod) {
 					case 140:	// 右脚←(4连火焰)
 					case 141:
 					case 142:
-						SpawnThing(true, 90, 50, 100);
+						//SpawnThing(true, 90, 50, 100);
 						Spawnitem1(itemID4, 180, 500, 6000);
 						Spawnitem1(itemID4, 0, 500, 6000);
 						
-						SpawnThing(true, 270, 100, 100);
+						//SpawnThing(true, 270, 100, 100);
 						Spawnitem1(itemID4, 180, 500, 6000);
 						Spawnitem1(itemID4, 0, 500, 6000);
 						break;
@@ -365,11 +365,11 @@ module.exports = function BaharrGuide(mod) {
 		curLocation.y = boss_CurLocation.y + radius * Math.sin(finalrad);
 		
 		mod.send('S_SPAWN_BUILD_OBJECT', 2, {
-			gameId : uid1,
-			itemId : itemID1,
-			loc : curLocation,
-			w : r,
-			unk : 0,
+			gameId: uid1,
+			itemId: itemID1,
+			loc: curLocation,
+			w: r,
+			unk: 0,
 			ownerName : 'SAFE',
 			message : 'SAFE'
 		});
@@ -395,8 +395,8 @@ module.exports = function BaharrGuide(mod) {
 	
 	function DespawnThing(uid_arg1, uid_arg2) {
 		mod.send('S_DESPAWN_BUILD_OBJECT', 2, {
-			gameId : uid_arg1,
-			unk : 0
+			gameId: uid_arg1
+			//unk : 0 // wtf since when it's gone hmmm ?
 		});
 		mod.send('S_DESPAWN_DROPITEM', 4, {
 			gameId: uid_arg2
