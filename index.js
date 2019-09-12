@@ -324,9 +324,9 @@ module.exports = function BaharrGuide(mod) {
 	
 	function noticeMessage(msg) {
 		if (sendToNotice) {
-			mod.send('S_CHAT', 2, {
+			mod.send('S_CHAT', 3, {
 				channel: 21,
-				authorName: 'Guide',
+				name: 'Guide',
 				message: msg
 			});
 		}
