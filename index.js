@@ -414,7 +414,7 @@ module.exports = function BaharrGuide(mod) {
 		finalrad = r - rads;
 		spawnx = curLocation.x + radius * Math.cos(finalrad);
 		spawny = curLocation.y + radius * Math.sin(finalrad);
-		pos = {x:spawnx, y:spawny, curLocation.z};
+		pos = {x:spawnx, y:spawny, z:curLocation.z};
 		
 		mod.send('S_SPAWN_COLLECTION', 4, {
 			gameId : uid0,
