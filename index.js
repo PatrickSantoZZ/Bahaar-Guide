@@ -91,7 +91,7 @@ module.exports = function BaharrGuide(mod) {
 		}
 	});
 	
-	mod.hook('S_LOGIN', mod.majorPatchVersion >= 81 ? 13 : 12, (event) => {
+	mod.hook('S_LOGIN', mod.majorPatchVersion >= 86 ? 14 : 13, (event) => {
 		let job = (event.templateId - 10101) % 100;
 		if (job === 1 || job === 10) {					// 0-双刀, 1-枪骑, 2-大剑, 3-斧头, 4-魔道
 			isTank = true;								// 5-弓箭, 6-祭司, 7-元素, 8-飞镰, 9-魔工
