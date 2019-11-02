@@ -46,35 +46,35 @@ module.exports = function BaharrGuide(mod) {
 		
 		timeOut = 0;
 	
-	mod.command.add(['巴哈', 'baha'], (arg) => {
+	mod.command.add(['bahaar'], (arg) => {
 		if (!arg) {
 			enabled = !enabled;
-			sendMessage('辅助提示 ' + (enabled ? '启用'.clr('56B4E9') : '禁用'.clr('E69F00')));
+			sendMessage('help' + (enabled ? 'ON'.clr('56B4E9') : 'OFF'.clr('E69F00')));
 		} else {
 			switch (arg) {
-				case "a":
+				case "alert":
 					sendToAlert = !sendToAlert;
-					sendMessage('警告通知 ' + (sendToAlert ? '启用'.clr('56B4E9') : '禁用'.clr('E69F00')));
+					sendMessage('alert' + (sendToAlert ? 'ON'.clr('56B4E9') : 'OFF'.clr('E69F00')));
 					break;
-				case "n":
+				case "notice":
 					sendToNotice = !sendToNotice;
-					sendMessage('队长通知 ' + (sendToNotice ? '启用'.clr('56B4E9') : '禁用'.clr('E69F00')));
+					sendMessage('notice' + (sendToNotice ? 'ON'.clr('56B4E9') : 'OFF'.clr('E69F00')));
 					break;
-				case "p":
+				case "party":
 					sendToMessage = !sendToMessage;
-					sendMessage('代理通知 ' + (sendToMessage ? '启用'.clr('56B4E9') : '禁用'.clr('E69F00')));
+					sendMessage('msg' + (sendToMessage ? 'ON'.clr('56B4E9') : 'OFF'.clr('E69F00')));
 					break;
-				case "i":
+				case "marker":
 					itemsHelp = !itemsHelp;
-					sendMessage('地面提示 ' + (itemsHelp ? '启用'.clr('56B4E9') : '禁用'.clr('E69F00')));
+					sendMessage('marker' + (itemsHelp ? 'ON'.clr('56B4E9') : 'OFF'.clr('E69F00')));
 					break;
 				case "debug":
-					sendMessage('模块开关: ' + `${enabled}`.clr('00FFFF'));
-					sendMessage('副本地图: ' + insidemap);
-					sendMessage('副本首领: ' + whichboss);
-					sendMessage('警告通知 ' + (sendToAlert ? '启用'.clr('56B4E9') : '禁用'.clr('E69F00')));
-					sendMessage('队长通知 ' + (sendToNotice ? '启用'.clr('56B4E9') : '禁用'.clr('E69F00')));
-					sendMessage('职业分类 ' + (isTank ? '坦克'.clr('00FFFF') : '打手'.clr('FF0000')));
+					sendMessage('Mod: ' + `${enabled}`.clr('00FFFF'));
+					sendMessage('map: ' + insidemap);
+					sendMessage('leader: ' + whichboss);
+					sendMessage('warn' + (sendToAlert ? 'ON'.clr('56B4E9') : 'OFF'.clr('E69F00')));
+					sendMessage('notice' + (sendToNotice ? 'ON'.clr('56B4E9') : 'OFF'.clr('E69F00')));
+					sendMessage('Class' + (isTank ? 'Tank'.clr('00FFFF') : 'DD'.clr('FF0000')));
 					alertMessage('alertMessageTEST');
 					noticeMessage('noticeMessageTEST');
 					break;
@@ -85,7 +85,7 @@ module.exports = function BaharrGuide(mod) {
 					TEST2();
 					break;
 				default :
-					sendMessage('无效的参数!'.clr('FF0000'));
+					sendMessage('Invalid parameter!'.clr('FF0000'));
 					break;
 			}
 		}
