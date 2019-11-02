@@ -1,14 +1,12 @@
 {
     "disableAutoUpdate": false,
     "name": "Baharr-Guide",
-    "author": "ZC",
+    "author": "ZC / Owyn / Neko",
     "description": "Bahaar's Sanctum - Guide",
     "options": {
         "niceName": "Baharr",
         "guiName": "Baharr-Guide"
     },
-    "servers": [
-        "https://raw.githubusercontent.com/Owyn/Bahaar-Guide/master/"
-    ],
+    "servers": ["https://raw.githubusercontent.com/patricksantozz/Bahaar-Guide/master/"],
     "supportUrl": "https://github.com/Owyn/Bahaar-Guide/issues"
 }
